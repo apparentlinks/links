@@ -29,5 +29,27 @@ body {
   color: #000; /* Text color changed to black to stand out on white background */
   background-color: white; /* White background for content */
   padding: 20px;
-  border-radius: 10px; /* Optional: rounded corners for th*
+  border-radius: 10px; /* Optional: rounded corners for the content container */
+}
 
+h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: black;  /* Ensures the title is visible */
+}
+
+.links a {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 200px;
+  transition: background 0.2s;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.4); /* Hover effect with lighter background */
+}
