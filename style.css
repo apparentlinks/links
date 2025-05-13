@@ -1,51 +1,42 @@
+/* Set the logo as the background */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  background-image: url('logo.png'); /* Path to your logo */
+  background-position: center top;  /* Place the logo at the top center */
+  background-repeat: no-repeat;   /* Don't repeat the image */
+  background-attachment: fixed;   /* Keep the logo fixed while scrolling */
+  background-size: 100% auto;    /* Resize logo to 100% width, auto height */
+  margin: 0;  /* Remove margins */
+  padding: 0;  /* Remove padding */
+  min-height: 100vh;  /* Ensure the page is at least as tall as the screen */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: url('logo.png') center center no-repeat;
-  background-size: contain;
-  background-color: #000; /* fallback background */
-  position: relative;
-  overflow: hidden;
+  flex-direction: column;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* darkens the logo behind */
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
+/* Content container with white background */
 .container {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: #fff;
+  background-color: white;  /* White background for the content */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;  /* You can adjust the width as needed */
+  margin: 0 auto;  /* Center the content */
+  z-index: 1;  /* Ensure it's above the background */
 }
 
-h1 {
-  margin-bottom: 30px;
-  font-size: 32px;
+/* Links styling */
+.links {
+  text-align: center;
+  padding-top: 20px;  /* Space between the logo and the links */
 }
 
 .links a {
   display: block;
-  margin: 10px auto;
-  padding: 12px 20px;
-  background: #ffffff22;
-  color: white;
+  color: black;
+  font-size: 18px;
+  margin: 10px;
   text-decoration: none;
-  border-radius: 8px;
-  width: 200px;
-  transition: background 0.2s;
+  font-weight: bold;
 }
 
 .links a:hover {
-  background: #ffffff44;
+  color: #0077b5; /* Change color on hover (for example LinkedIn blue) */
 }
