@@ -34,8 +34,8 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #000; /* Text color changed to black to stand out on white background */
-  background-color: white; /* White background for content */
+  background: transparent; /* Transparent background for the container */
+  color: black;  /* Text color */
   padding: 20px;
   border-radius: 10px; /* Optional: rounded corners for the content container */
 }
@@ -50,7 +50,7 @@ h1 {
   display: block;
   margin: 10px auto;
   padding: 12px 20px;
-  background: #00000011; /* Subtle background */
+  background: #ffffffcc; /* White with slight transparency */
   color: black;
   text-decoration: none;
   border-radius: 8px;
@@ -61,7 +61,7 @@ h1 {
 }
 
 .links a:hover {
-  background: #00000022; /* Darker background on hover */
+  background: #ffffffee; /* Slightly less transparent on hover */
 }
 
 /* Add responsiveness for smaller screens */
@@ -70,3 +70,4 @@ h1 {
     width: 90%;  /* Make container slightly wider on smaller screens */
   }
 }
+
