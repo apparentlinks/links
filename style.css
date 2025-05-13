@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url('logo.jpg') center center no-repeat; /* Set your logo */
+  background: url('logo.png') center center no-repeat; /* Set your logo */
   background-size: cover;  /* Ensures the logo fully covers the background */
   background-color: white; /* White background for the content */
   position: relative;
