@@ -5,9 +5,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url('logo.jpg') center center no-repeat;
-  background-size: contain;
-  background-color: #000; /* fallback background */
+  background: url('logo.jpg') center center no-repeat; /* Set your logo */
+  background-size: cover;  /* Ensures the logo fully covers the background */
+  background-color: white; /* White background for the content */
   position: relative;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* darkens the logo behind */
+  background: transparent; /* Removed dark overlay */
   top: 0;
   left: 0;
   z-index: 0;
@@ -26,27 +26,8 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #fff;
-}
-
-h1 {
-  margin-bottom: 30px;
-  font-size: 32px;
-}
-
-.links a {
-  display: block;
-  margin: 10px auto;
-  padding: 12px 20px;
-  background: #ffffff22;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  width: 200px;
-  transition: background 0.2s;
-}
-
-.links a:hover {
-  background: #ffffff44;
-}
+  color: #000; /* Text color changed to black to stand out on white background */
+  background-color: white; /* White background for content */
+  padding: 20px;
+  border-radius: 10px; /* Optional: rounded corners for th*
 
